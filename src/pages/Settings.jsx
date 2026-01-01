@@ -11,6 +11,7 @@ import { useDeleteAccount, useAccountsData } from "../services/apiAccounts";
 import { useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { Trash2, Landmark } from "lucide-react";
+import { SettingsContainer } from "../styles/SettingsContainer";
 
 function Settings() {
   const { user } = useUser();
@@ -59,10 +60,8 @@ function Settings() {
   };
 
   return (
-    <div style={{ maxWidth: "600px", margin: "0 auto", paddingBottom: "4rem" }}>
+    <SettingsContainer>
       <h1>Vault Settings</h1>
-
-      {/* 1. PROFILE SECTION */}
       <AuthCard style={{ marginBottom: "2rem" }}>
         <h3>Profile Identity</h3>
         <form onSubmit={handleSubmit(onUpdateProfile)}>
@@ -168,7 +167,7 @@ function Settings() {
           {isChangingPassword ? "Updating..." : "Change Password"}
         </AuthButton>
       </AuthCard>
-    </div>
+    </SettingsContainer>
   );
 }
 

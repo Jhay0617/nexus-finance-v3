@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useSignup } from "../hooks/useSignup";
+import { useState } from "react";
+import { useSignUp } from "../hooks/useSignUp";
 import {
   AuthContainer,
   AuthCard,
@@ -27,7 +27,7 @@ function SignupPage() {
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
 
-  const { signUp, isPending } = useSignup();
+  const { signUp, isPending } = useSignUp();
 
   function handleSubmit(e) {
     e.preventDefault();

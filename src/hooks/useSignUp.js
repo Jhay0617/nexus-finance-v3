@@ -3,7 +3,7 @@ import { signUp as signUpApi } from "./useAuth";
 
 import { toast } from "sonner";
 
-export const useSignup = () => {
+export const useSignUp = () => {
   const { mutate: signUp, isPending } = useMutation({
     mutationFn: signUpApi,
 

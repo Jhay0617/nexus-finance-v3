@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# --- NEXUS V3 SPECIFIC ---
+
+# Supabase & Environment Secrets (CRITICAL)
+.env
+.env.development
+.env.production
+.env.local
+.env.*.local
+
+# Supabase Local Development
+.supabase/
+supabase/.temp/
+supabase/functions/.import_map.json
+
+# Logic & Build cache
+.eslintcache
+.stylelintcache
+.turbo
+.next
+
+# VNC/System files
+Thumbs.db
